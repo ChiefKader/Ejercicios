@@ -5,7 +5,7 @@ Se trata de una plataforma que sirve para crear proyectos abiertos de herramient
 se caracteriza por sus funciones colaborativas que ayudan a que todos te puedan ayudar o aconsejar
 para mejorar el código.Los proyectos que sean abiertos pueden ser revisados y descargados por cualquier
 usuario, lo que ayuda a mejorar y crear ramificaciones a partir de él. Y si
-quieres también puedes hacer que tu código sea privado.
+quieres también puedes hacer que tu código sea privado. Este informe hablara sobre como instalar GitHub, la creación de un archivo , también sobre la función de algunos comandos y finalmente dare mi conclusión.
 
 ### Instalacion GitHub
 1. Lo primero que debemos de hacer sera crear una cuenta en [GitHub](https://github.com/).
