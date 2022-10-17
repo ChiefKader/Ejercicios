@@ -12,11 +12,36 @@ Apache es un servidor web HTTP de código abierto, desarrollado y mantenido por 
 La motivación para la realización del proyecto es la de saber para que sirve Apache y de esta manera explicar lo que queremos conseguir.
 
 ## Configuración
-
+### Crear tu propio sitio web
+Abriremos la terminal de Linux(Ctrl+T) e introduciremos.
+```
+sudo mkdir /var/www/gci/
+```
+En nuestro caso lo hemos nombrado gci pero cualquier nombre valdria. A continuación crearemos un archivo html:
+```
+touch mohamed.html
+```
+```
+sudo nano mohamed.html 
+```
+Una vez hecho lo anterios nos abrira el archivo creado y procederos a introducir lo siguiente:
+```
+<html>
+<head>
+  <title> Ubuntu rocks! </title>
+</head>
+<body>
+  <p> I'm running this website on an Ubuntu Server server!
+</body>
+</html>
+```
+### Conclusión
+esto es util porque se puede crear un sitio web desde el que se puede acceder a otro ordenador
 
 #### Webrafía
 * [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es)
 * [LinuxConfig](https://linuxconfig.org/firewall-ufw-status-inactive-on-ubuntu-20-04-focal-fossa-linux)
 * [DinaHosting](https://dinahosting.com/ayuda/que-es-apache-y-para-que-sirve/)
 * [Wikipedia](https://es.wikipedia.org/wiki/Servidor_HTTP_Apache)
+* [Ubuntu](https://ubuntu.com/tutorials/install-and-configure-apache#3-creating-your-own-website)
 * []()
