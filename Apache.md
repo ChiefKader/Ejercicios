@@ -24,7 +24,7 @@ touch mohamed.html
 ```
 sudo nano mohamed.html 
 ```
-Una vez hecho lo anterios nos abrira el archivo creado y procederos a introducir lo siguiente:
+Una vez hecho lo anterios se nos abrira el archivo creado y procederemos a introducir lo siguiente:
 ```
 <html>
 <head>
@@ -35,8 +35,20 @@ Una vez hecho lo anterios nos abrira el archivo creado y procederos a introducir
 </body>
 </html>
 ```
-### Conclusión
-esto es util porque se puede crear un sitio web desde el que se puede acceder a otro ordenador
+Finalmete crearemos un archivo de virtual host, para eso iremos a:
+```
+gci.example.com
+```
+### Configuracion del archivo de configuración de VirtualHost
+Comenzaremos la configuración dirigiendonos a la carpeta de configuración de archivos.
+```
+cd /etc/apache2/sites-available/
+```
+Ahora consultaremos el nombre de nuestro subdominio, con el comando:
+```
+sudo cp 000-default.conf gci.conf
+```
+
 
 #### Webrafía
 * [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es)
