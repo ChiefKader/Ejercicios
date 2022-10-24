@@ -28,14 +28,14 @@ Una vez hecho lo anterios se nos abrira el archivo creado y procederemos a intro
 ```
 <html>
 <head>
-  <title> Ubuntu rocks! </title>
+  <title> Ubuntu Mola! </title>
 </head>
 <body>
   <p> I'm running this website on an Ubuntu Server server!
 </body>
 </html>
 ```
-Finalmete crearemos un archivo de virtual host, para eso iremos a:
+Finalmete crearemos un archivo de virtual host. Para eso iremos a:
 ```
 gci.example.com
 ```
@@ -48,8 +48,35 @@ Ahora consultaremos el nombre de nuestro subdominio, con el comando:
 ```
 sudo cp 000-default.conf gci.conf
 ```
-
-
+A continuación configuraremos el archivo de configuración
+```
+sudo nano gci.conf
+```
+Ahora en ServerAdmin deberemos de introducir un correo electrónico nuestro para que en el caso de que ocurra algún error, los clientes puedan comunicarse con nosotros.
+```
+ServerAdmin yourname@example.com
+```
+Ahora le daremos un nombre al servidor ya que por defecto no tiene, lo haremos con:
+```
+ServerName gci.mohamed.com
+```
+### Activación del Archivo de VirtualHost
+El primer paso que debemos hacer sera el activar el archivo de configuración de VirtualHost:
+```
+sudo a2ensite gci.conf
+```
+Seguidamente se nos mostrara el siguiente comando:
+```
+Enabling site gci.
+To activate the new configuration, you need to run:
+  service apache2 reload
+root@ubuntu-server:/etc/apache2/sites-available#
+```
+Finalmente recargamos Apache con:
+```
+service apache2 reload
+```
+![]()
 #### Webrafía
 * [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04-es)
 * [LinuxConfig](https://linuxconfig.org/firewall-ufw-status-inactive-on-ubuntu-20-04-focal-fossa-linux)
